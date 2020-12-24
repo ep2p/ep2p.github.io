@@ -19,6 +19,14 @@
     <link rel="stylesheet" href="css/main.css">    
     <link rel="stylesheet" href="css/responsive.css">
 
+
+    <script src="js/jquery-min.js"></script>
+    <script src="https://ep2p.github.io/blog/js/api.js"></script>
+    <script>
+      gitblog.setDbPath("https://ep2p.github.io/blog/db")
+    </script>
+    <script src="https://ep2p.github.io/blog/js/engine.js"></script>
+
   </head>
   
   <body>
@@ -42,6 +50,9 @@
               </li>                       
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#download">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" target="_blank" href="https://ep2p.github.io/blog/">Blog</a>
               </li> 
             </ul>
           </div>
@@ -244,69 +255,25 @@
       <div class="container">
          <div class="section-header">   
           <p class="btn btn-subtitle wow fadeInDown" data-wow-delay="0.2s">Blog</p>       
-          <h2 class="section-title">Recent News</h2>
+          <h2 class="section-title">Recent Posts</h2>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
+          <div class="col-lg-4 col-md-6 col-xs-12 blog-item" data-gb="posts" data-gb-slice-start="-4" data-gb-post-fetch-user="1">
             <!-- Blog Item Starts -->
             <div class="blog-item-wrapper">
               <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img1.jpg" alt="">
+                <a href="https://ep2p.github.io/blog/${post.url}">
+                  <img src="${post.cover}" alt="">
                 </a>   
                 <div class="author-img">
-                  <img src="img/blog/author.png" alt="">
+                  <img src="${post.user.profilePicture}" style="width: 60px; height: 60px;" alt="">
                 </div>             
               </div>
               <div class="blog-item-text"> 
-                <h3><a href="single-post.html">How Eleuth tries to keep you secure</a></h3>
+                <h3><a href="https://ep2p.github.io/blog/${post.url}">${post.title}</a></h3>
                 <div class="author">
-                  <span class="name"><a href="#">Posted by Sepehr</a></span>
-                  <span class="date float-right">10 April, 2020</span>
-                </div>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img2.jpg" alt="">
-                </a>   
-                <div class="author-img">
-                  <img src="img/blog/author.png" alt="">
-                </div>             
-              </div>
-              <div class="blog-item-text"> 
-                <h3><a href="single-post.html">How to setup an Eleuth node</a></h3>
-                <div class="author">
-                  <span class="name"><a href="#">Posted by Sepehr</a></span>
-                  <span class="date float-right">10 April, 2020</span>
-                </div>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/img3.jpg" alt="">
-                </a>   
-                <div class="author-img">
-                  <img src="img/blog/author.png" alt="">
-                </div>             
-              </div>
-              <div class="blog-item-text"> 
-                <h3><a href="single-post.html">All you need to know about kademlia</a></h3>
-                <div class="author">
-                  <span class="name"><a href="#">Posted by Sepehr</a></span>
-                  <span class="date float-right">10 April, 2020</span>
+                  <span class="name"><a href="https://ep2p.github.io/blog/${post.user.url}">Posted by Sepehr</a></span>
+                  <span class="date float-right">${post.date}</span>
                 </div>
               </div>
             </div>
@@ -391,8 +358,7 @@
     </div>
     <!-- End Preloader -->
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="js/jquery-min.js"></script>
+  
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.js"></script> 
