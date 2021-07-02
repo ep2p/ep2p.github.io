@@ -36,7 +36,7 @@ Domain Path:      /languages/
    ========================================================================== */
 body {
   font-family: 'Roboto', sans-serif;
-  color: #a0a6ad;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   background: #fff;
@@ -45,11 +45,12 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 
 p {
   font-size: 14px;
-  color: #a0a6ad;
+  color: #e8e8e8;
   line-height: 26px;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 0;
@@ -60,7 +61,6 @@ a:hover, a:focus {
 }
 
 a {
-  color: #3c9cfd;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 700;
-  color: #191c1e;
 }
 
 ul {
@@ -105,11 +104,25 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   background: #3c9cfd !important;
 }
 
+.main-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
 /* ==========================================================================
    Section Title
    ========================================================================== */
-.section {
-  padding: 80px 0 65px;
+.section, section {
+  padding: 50px 0 50px;
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+
+.center-items {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .section-header {
@@ -213,7 +226,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   cursor: pointer;
   background-color: #fff;
   border: 2px solid #fff;
-  color: #3c9cfd;
+  color: #567ea1;
 }
 
 .btn-border-filled:hover {
@@ -592,8 +605,8 @@ button:focus {
 
 .hero-area .contents p {
   color: #fff;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .hero-area .contents .btn {
@@ -617,6 +630,66 @@ button:focus {
   max-width: 100%;
 }
 
+.section-bg-1 {
+  background-color: #444343;
+  background-image: -webkit-linear-gradient(top, #030000, #444343);
+  background-image: -o-linear-gradient(top, #030000, #444343);
+  background-image: linear-gradient(top, #030000, #444343);
+}
+
+.section-bg-2 {
+  background-color: #616161;
+  background-image: -webkit-linear-gradient(top, #444343, #585858);
+  background-image: -o-linear-gradient(top, #444343, #585858);
+  background-image: linear-gradient(top, #444343, #585858);
+}
+
+.section-bg-3 {
+  background-color: #7e858b;
+  background-image: -webkit-linear-gradient(top, #585858, #6f7479);
+  background-image: -o-linear-gradient(top, #585858, #6f7479);
+  background-image: linear-gradient(top, #585858, #6f7479);
+}
+
+.section-bg-4 {
+  background-color: #6d8193;
+  background-image: -webkit-linear-gradient(top, #6f7479, #727e89);
+  background-image: -o-linear-gradient(top, #6f7479, #727e89);
+  background-image: linear-gradient(top, #6f7479, #727e89);
+}
+
+.section-bg-5 {
+  background-color: #6d8193;
+  background-image: -webkit-linear-gradient(top, #727e89, #6f7479);
+  background-image: -o-linear-gradient(top, #727e89, #6f7479);
+  background-image: linear-gradient(top, #727e89, #6f7479);
+}
+
+.section-bg-6 {
+  background-color: #7e858b;
+  background-image: -webkit-linear-gradient(top, #6f7479, #585858);
+  background-image: -o-linear-gradient(top, #6f7479, #585858);
+  background-image: linear-gradient(top, #6f7479, #585858);
+}
+
+.section-bg-7 {
+  background-color: #7e858b;
+  background-image: -webkit-linear-gradient(top, #585858, #444343);
+  background-image: -o-linear-gradient(top, #585858, #444343);
+  background-image: linear-gradient(top, #585858, #444343);
+}
+
+.section-bg-8 {
+  background-color: #444343;
+  background-image: -webkit-linear-gradient(top, #444343, #030000);
+  background-image: -o-linear-gradient(top, #444343, #030000);
+  background-image: linear-gradient(top, #444343, #030000);
+}
+
+.section-bg-n {
+  background-color: #030000;
+}
+
 /* ==========================================================================
  Hero Production version
  ========================================================================== */
@@ -632,9 +705,6 @@ button:focus {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
 }
 
 .hero-area-2 .contents {
@@ -651,8 +721,8 @@ button:focus {
 
 .hero-area-2 .contents p {
   color: #fff;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .hero-area-2 .contents .btn {
@@ -1047,9 +1117,6 @@ button:focus {
 /* ==========================================================================
     App Features Section Style
    ========================================================================== */
-#app-features {
-  background: #f6fbfd;
-}
 
 #app-features .content-left {
   position: relative;
@@ -1082,9 +1149,7 @@ button:focus {
   border-radius: 50px;
   text-align: center;
   position: relative;
-  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  border: 2px solid #fff;
   z-index: 1;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -1110,7 +1175,7 @@ button:focus {
 }
 
 #app-features .box-item .text p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
 }
 
@@ -1292,6 +1357,7 @@ button:focus {
 .testimonial-item .author {
   display: inline-block;
   margin-bottom: 20px;
+  color: #0b0b0b;
 }
 
 .testimonial-item .author .img-thumb {
@@ -1750,7 +1816,6 @@ button:focus {
 .left, .right {
   cursor: pointer;
   font-size: 30px;
-  color: #3c9cfd;
 }
 
 /* ==========================================================================
@@ -1760,7 +1825,7 @@ button:focus {
   background: #fff;
   border-radius: 5px;
   margin: 15px 0;
-  box-shadow: 0px 0px 17px #dddddd;
+  box-shadow: 0px 0px 17px #454545;
   -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
   -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
   transition: transform 0.2s linear, box-shadow 0.2s linear;
@@ -1808,6 +1873,10 @@ button:focus {
 
 #blog .blog-item-text h3 a:hover {
   color: #3c9cfd;
+}
+
+#blog .author {
+  color: #878787;
 }
 
 #blog .author .name a {

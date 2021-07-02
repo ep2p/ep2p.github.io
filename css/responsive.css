@@ -397,7 +397,7 @@
     padding: 10px;
   }
   .text-right {
-    text-align: left !important;
+    text-align: right !important;
   }
   .pricing-tables .pricing-table {
     margin-bottom: 30px;

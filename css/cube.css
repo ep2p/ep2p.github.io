@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+
+.scene {
+    width: 500px;
+    height: 500px;
+    /*border: 1px solid #CCC;*/
+    margin: 80px;
+    perspective: 500px;
+}
+
+.cube {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-250px);
+    transition: transform 1s;
+}
+
+.cube.show-front  { transform: translateZ(-250px) rotateY(   0deg); }
+.cube.show-right  { transform: translateZ(-250px) rotateY( -90deg); }
+.cube.show-back   { transform: translateZ(-250px) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(-250px) rotateY(  90deg); }
+.cube.show-top    { transform: translateZ(-250px) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(-250px) rotateX(  90deg); }
+
+.cube__face {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    /*text-align: justify;*/
+    background-color: #0b0b0b;
+    background-image: -webkit-linear-gradient(top, #575757, #afadad);
+    background-image: -o-linear-gradient(top, #575757, #afadad);
+    background-image: linear-gradient(top, #030000, #444343);
+    -webkit-box-shadow: 0px 0px 100px 20px rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 150px 20px rgba(255, 255, 255, 0.7);
+}
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(250px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(250px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(250px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(250px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(250px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(250px); }
+
+label { margin-right: 10px; }
+
+.radio-group ul {
+    list-style: none;
+}
+
+.radio-group input {
+    visibility: hidden;
+    width: 0;
+}
+.radio-group li {
+    display: inline-block;
+
+}
+.radio-group label {
+    font-size: 16px;
+    cursor: pointer;
+    color: #0b0b0b;
+    padding: 8px 10px;
+    background-color: rgba(239, 239, 239, 0.45);
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+input:checked + label {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.cube__face .contents h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cube__face .contents p {
+    margin-top: 10px;
+    line-height: 30px;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.cube__face .contents .content-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -25%;
+}
