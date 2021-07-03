@@ -113,10 +113,12 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 /* ==========================================================================
    Section Title
    ========================================================================== */
-.section, section {
-  padding: 50px 0 50px;
+.section {
+  padding: 70px 0 0;
   min-height: 100vh;
   scroll-snap-align: start;
+  flex-direction: column;
+  position: relative;
 }
 
 .center-items {
@@ -653,33 +655,19 @@ button:focus {
 
 .section-bg-4 {
   background-color: #6d8193;
-  background-image: -webkit-linear-gradient(top, #6f7479, #727e89);
-  background-image: -o-linear-gradient(top, #6f7479, #727e89);
-  background-image: linear-gradient(top, #6f7479, #727e89);
-}
-
-.section-bg-5 {
-  background-color: #6d8193;
-  background-image: -webkit-linear-gradient(top, #727e89, #6f7479);
-  background-image: -o-linear-gradient(top, #727e89, #6f7479);
-  background-image: linear-gradient(top, #727e89, #6f7479);
-}
-
-.section-bg-6 {
-  background-color: #7e858b;
   background-image: -webkit-linear-gradient(top, #6f7479, #585858);
   background-image: -o-linear-gradient(top, #6f7479, #585858);
   background-image: linear-gradient(top, #6f7479, #585858);
 }
 
-.section-bg-7 {
+.section-bg-5 {
   background-color: #7e858b;
   background-image: -webkit-linear-gradient(top, #585858, #444343);
   background-image: -o-linear-gradient(top, #585858, #444343);
   background-image: linear-gradient(top, #585858, #444343);
 }
 
-.section-bg-8 {
+.section-bg-6 {
   background-color: #444343;
   background-image: -webkit-linear-gradient(top, #444343, #030000);
   background-image: -o-linear-gradient(top, #444343, #030000);
@@ -841,14 +829,12 @@ button:focus {
    Video promo Style
    ========================================================================== */
 .video-promo {
-  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
+  margin-top: 50px;
 }
 
 .video-promo .video-promo-content {
   color: #fff;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 .video-promo .video-promo-content .video-popup {
@@ -858,7 +844,7 @@ button:focus {
   line-height: 80px;
   text-align: center;
   border: 3px solid #fff;
-  color: #3c9cfd;
+  color: #000000;
   border-radius: 50%;
   display: inline-block;
   font-size: 26px;
@@ -2131,12 +2117,11 @@ textarea {
   position: relative;
 }
 
-footer .footer-Content {
-  background-image: -moz-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -webkit-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  background-image: -ms-linear-gradient(0deg, #3c96ff 0%, #2dfbff 100%);
-  padding: 60px 0 0px;
+.footer-content {
+  margin-top: 30px;
+  padding: 60px 0 0;
   color: #546E7A;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 footer .footer-Content h2 {
@@ -2146,7 +2131,7 @@ footer .footer-Content h2 {
 
 .textwidget {
   line-height: 24px;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .textwidget p {
@@ -2191,9 +2176,8 @@ footer .menu li a:hover {
 }
 
 .footer-social li .any-social:hover {
-  color: #3b5998;
+  color: #e6eeff;
 }
-
 
 
 .copyright {

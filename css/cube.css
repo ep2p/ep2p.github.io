@@ -74,8 +74,8 @@ label { margin-right: 10px; }
 }
 
 input:checked + label {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
+    font-weight: bolder;
+    background-color: rgba(239, 239, 239, 0.60);
 }
 
 .cube__face .contents h3 {

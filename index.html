@@ -153,7 +153,7 @@
         </div>
     </section>
 
-    <section class="section-bg-3">
+    <section class="section section-bg-3">
         <div class="center-items">
             <div class="scene">
                 <div class="cube">
@@ -180,7 +180,7 @@
                     </div>
                     <div class="cube__face cube__face--right">
                         <div class="contents">
-                            <h3 class="head-title">Lib Kademlia</h3>
+                            <h3 class="head-title">Lib Kademlia <a target="_blank" href="https://maven-badges.herokuapp.com/maven-central/io.ep2p/kademlia-api"><img src="https://maven-badges.herokuapp.com/maven-central/io.ep2p/kademlia-api/badge.png?gav=true"/></a></h3>
                             <p><b>Kademlia API</b> is the core algorithm used in Eleuth node for decentralization.</p>
                             <p>We have introduced our own abstract Kademlia API implementation. This API is designed in a way that makes it possible for the library to be used in various types of project.</p>
                             <div class="content-button">
@@ -190,7 +190,7 @@
                     </div>
                     <div class="cube__face cube__face--left">
                         <div class="contents">
-                            <h3 class="head-title">Lib Somnia</h3>
+                            <h3 class="head-title">Lib Somnia <a target="_blank" href="https://maven-badges.herokuapp.com/maven-central/io.ep2p/somnia"><img src="https://maven-badges.herokuapp.com/maven-central/io.ep2p/somnia/badge.png?gav=true"/></a></h3>
                             <p><b>Somnia</b> is the core decentralized storage system used in each Eleuth node.</p>
                             <p>This library makes it easier for a Spring Boot project to have a support of decentralized storage. Somnia uses MongoDB as its main database implementation.</p>
                             <p>Also, Somnia is written on top of Kadmlia API and with applying few changes, it makes it possible to distribute data between several nodes.</p>
@@ -199,15 +199,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cube__face cube__face--top"></div>
-                    <div class="cube__face cube__face--bottom"></div>
+                    <div class="cube__face cube__face--top">
+                        <div class="contents">
+                            <h3 class="head-title">Eleuth Client</h3>
+                            <p>Our client applications will support all major platforms: Android, iOS, Linux, Mac, Windows.</p>
+                            <p>We chose some of the best cross-platform solutions so that we can provide the same experience to all of our users.</p>
+                            <p>Our mobile apps are developed with <b>React Native</b> and we also have a CLI client out there to satisfy the nerds!</p>
+                        </div>
+                    </div>
+                    <div class="cube__face cube__face--bottom">
+                        <div class="contents">
+                            <h3 class="head-title">Technology Stack</h3>
+                            <p>We are using some of the well known technologies to develop our application therefore it will make it easier for other developers to give us a hand.</p>
+                            <p>Most of our backend applications are written in <b>Java</b> and <b>Spring Boot</b>.</p>
+                            <p>The main database choice is <b>MongoDB</b> and we also make use of Google's <b>Guava</b> in various ways.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <ul class="radio-group" style="text-align: center">
             <li>
                 <input type="radio" id="rotate-cube-front" name="rotate-cube-side" value="front" checked/>
-                <label for="rotate-cube-front">Eleuth</label>
+                <label for="rotate-cube-front">Server</label>
             </li>
             <li>
                 <input type="radio" id="rotate-cube-right" name="rotate-cube-side" value="right" />
@@ -221,14 +235,14 @@
                 <input type="radio" id="rotate-cube-left" name="rotate-cube-side" value="left" />
                 <label for="rotate-cube-left">Somnia</label>
             </li>
-<!--            <li>-->
-<!--                <input type="radio" id="rotate-cube-top" name="rotate-cube-side" value="top" />-->
-<!--                <label for="rotate-cube-top">top</label>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <input type="radio" id="rotate-cube-bottom" name="rotate-cube-side" value="bottom" />-->
-<!--                <label for="rotate-cube-bottom">bottom</label>-->
-<!--            </li>-->
+            <li>
+                <input type="radio" id="rotate-cube-top" name="rotate-cube-side" value="top" />
+                <label for="rotate-cube-top">Client</label>
+            </li>
+            <li>
+                <input type="radio" id="rotate-cube-bottom" name="rotate-cube-side" value="bottom" />
+                <label for="rotate-cube-bottom">Technology Stack</label>
+            </li>
         </ul>
 
     </section>
@@ -247,24 +261,103 @@
     </section>
     <!-- blog Section End -->
 
-    <section class="section-bg-5">
-        uhum
-    </section>
-
-    <section class="section-bg-6">
-        uhum
-    </section>
-
-    <section class="section-bg-7">
-        uhum
-    </section>
-
-    <section class="section-bg-8">
-        uhum
-    </section>
-
-    <section class="section-bg-n">
-        uhum
+    <section class="section section-bg-5">
+        <div class="video-promo">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="video-promo-content text-center">
+                            <a target="_blank" href="https://www.youtube.com/channel/UCo_988fUafiAalmvXY0ou5Q/" class="video-popup"><i class="lni lni-video"></i></a>
+                            <h2 class="mt-3 wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Watch Eleuth Videos</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="text-wrapper wow fadeInRight" data-wow-delay="0.9s">
+                            <div>
+                                <p class="btn btn-subtitle">Latest</p>
+                                <h3>Kademlia Algorithm Overview</h3>
+                                <p>Kademlia plays an important role in Eleuth network structure. We made an abstract API for kademlia which you can use in your own projects.
+                                    But lets see a brief explanation on what Kademlia is.
+                                </p>
+                                <a class="btn btn-rm" href="https://www.youtube.com/channel/UCo_988fUafiAalmvXY0ou5Q/">Watch video <i class="lni lni-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="img-thumb wow fadeInLeft" data-wow-delay="1.2s">
+                            <a href="https://www.youtube.com/channel/UCo_988fUafiAalmvXY0ou5Q/"><img class="img-fluid" src="img/features/kademlia.png" alt="Kademlia Algorithm Overview"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-content">
+            <!-- Footer Area Start -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+                        <img src="img/logo.png" alt="">
+                        <div class="textwidget">
+                            <p>Eleuth Open Source project focuses on creating p2p (decentralized) network for secured and anonymous messaging.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+                        <div class="widget">
+                            <h3 class="block-title">Learn more</h3>
+                            <ul class="menu">
+                                <li><a target="_blank" href="https://blog.ep2p.io/">Blog</a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/channel/UCo_988fUafiAalmvXY0ou5Q/">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+                        <div class="widget">
+                            <h3 class="block-title">Resource</h3>
+                            <ul class="menu">
+                                <li><a>Documentation</a></li>
+                                <li><a href="https://jenkins.ep2p.io/">Jenkins Builds</a></li>
+                                <li><a href="https://github.com/ep2p">Source</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+                        <div class="widget">
+                            <h3 class="block-title">Contact Us</h3>
+                            <ul class="menu">
+                                <li><a href="#">Join Our Discord</a></li>
+                                <li><a href="mailto:info@ep2p.io"><b>Email</b>: info@ep2p.io</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright Start  -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="site-info float-left">
+                                <p>&copy; 2021 - Eleuth Network - Template Originally Designed by <a target="_blank" href="http://uideck.com" rel="nofollow">UIdeck</a></p>
+                            </div>
+                            <div class="float-right">
+                                <ul class="footer-social">
+                                    <li><a class="any-social" href="https://github.com/ep2p"><i class="lni lni-github-original"></i></a></li>
+                                    <li><a class="any-social" href="#"><i class="lni lni-instagram-filled"></i></a></li>
+                                    <li><a class="any-social" href="https://www.youtube.com/channel/UCo_988fUafiAalmvXY0ou5Q/"><i class="lni lni-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright End -->
+        </footer>
+        <!-- Footer area End -->
     </section>
 
 </div>
