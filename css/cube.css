@@ -71,6 +71,8 @@ label { margin-right: 10px; }
     text-align: center;
     align-content: center;
     border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 input:checked + label {
@@ -95,4 +97,52 @@ input:checked + label {
     bottom: 20px;
     left: 50%;
     margin-left: -25%;
+}
+
+@media (min-width: 410px) and (max-width: 600px) {
+    .scene {
+        width: 400px;
+        height: 400px;
+        perspective: 400px;
+    }
+
+    .cube {
+        width: 400px;
+        height: 400px;
+        transform: translateZ(-200px);
+    }
+
+    .cube__face {
+        width: 400px;
+        height: 400px;
+    }
+
+    .cube__face p {
+        font-size: 10px;
+    }
+
+    .cube__face .contents h3 {
+        font-size: medium;
+        margin: 10px 0;
+    }
+
+    .cube__face .contents {
+        padding: 2px;
+    }
+
+    .cube__face--front  { transform: rotateY(  0deg) translateZ(200px); }
+    .cube__face--right  { transform: rotateY( 90deg) translateZ(200px); }
+    .cube__face--back   { transform: rotateY(180deg) translateZ(200px); }
+    .cube__face--left   { transform: rotateY(-90deg) translateZ(200px); }
+    .cube__face--top    { transform: rotateX( 90deg) translateZ(200px); }
+    .cube__face--bottom { transform: rotateX(-90deg) translateZ(200px); }
+
+    .small-hidden, .cube__face .content-button {
+        visibility: hidden
+    }
+
+    .radio-group label{
+        font-size: 10px;
+        padding: 5px 10px;
+    }
 }

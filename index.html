@@ -12,8 +12,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/line-icons.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -158,7 +157,7 @@
                         <div class="contents">
                             <h3 class="head-title">Eleuth Node</h3>
                             <p>At top of all our technologies, there is the Eleuth node which connects all of our libraries together and creates working decentralized messaging system</p>
-                            <p>Each node takes care of encryption verification, decentralization and distribution of data, while also routing messages to clients.</p>
+                            <p class="small-hidden">Each node takes care of encryption verification, decentralization and distribution of data, while also routing messages to clients.</p>
                             <div class="content-button">
                                 <a target="_blank" href="https://github.com/ep2p/eleuth-server" class="btn btn-border-filled"><i class="lni lni-github-original"></i> Open the repository</a>
                             </div>
@@ -168,8 +167,8 @@
                         <div class="contents">
                             <h3 class="head-title">Lib ROW</h3>
                             <p>Behind each of the nodes in the system, you can find <b>R</b>est <b>O</b>ver <b>W</b>ebsocket protocol.</p>
-                            <p>Using ROW our clients and servers can make use of communicating over Websocket when possible and HTTP when websocket is not possible.</p>
-                            <p>ROW makes it possible to reuse websocket connection. Also ROW server is made as a <b>Spring Boot</b> library and makes use of <i style="color: yellow">@Controller</i> annotations.</p>
+                            <p class="small-hidden">Using ROW our clients and servers can make use of communicating over Websocket when possible and HTTP when websocket is not possible.</p>
+                            <p class="small-hidden">ROW makes it possible to reuse websocket connection. Also ROW server is made as a <b>Spring Boot</b> library and makes use of <i style="color: yellow">@Controller</i> annotations.</p>
                             <div class="content-button">
                                 <a target="_blank" href="https://github.com/ep2p/row-server-starter" class="btn btn-border-filled"><i class="lni lni-github-original"></i> Open the repository</a>
                             </div>
@@ -179,7 +178,7 @@
                         <div class="contents">
                             <h3 class="head-title">Lib Kademlia <a target="_blank" href="https://maven-badges.herokuapp.com/maven-central/io.ep2p/kademlia-api"><img src="https://maven-badges.herokuapp.com/maven-central/io.ep2p/kademlia-api/badge.png?gav=true"/></a></h3>
                             <p><b>Kademlia API</b> is the core algorithm used in Eleuth node for decentralization.</p>
-                            <p>We have introduced our own abstract Kademlia API implementation. This API is designed in a way that makes it possible for the library to be used in various types of project.</p>
+                            <p class="small-hidden">We have introduced our own abstract Kademlia API implementation. This API is designed in a way that makes it possible for the library to be used in various types of project.</p>
                             <div class="content-button">
                                 <a target="_blank" href="https://github.com/ep2p/kademlia-api" class="btn btn-border-filled"><i class="lni lni-github-original"></i> Open the repository</a>
                             </div>
@@ -189,8 +188,8 @@
                         <div class="contents">
                             <h3 class="head-title">Lib Somnia <a target="_blank" href="https://maven-badges.herokuapp.com/maven-central/io.ep2p/somnia"><img src="https://maven-badges.herokuapp.com/maven-central/io.ep2p/somnia/badge.png?gav=true"/></a></h3>
                             <p><b>Somnia</b> is the core decentralized storage system used in each Eleuth node.</p>
-                            <p>This library makes it easier for a Spring Boot project to have a support of decentralized storage. Somnia uses MongoDB as its main database implementation.</p>
-                            <p>Also, Somnia is written on top of Kadmlia API and with applying few changes, it makes it possible to distribute data between several nodes.</p>
+                            <p class="small-hidden">This library makes it easier for a Spring Boot project to have a support of decentralized storage. Somnia uses MongoDB as its main database implementation.</p>
+                            <p class="small-hidden">Also, Somnia is written on top of Kadmlia API and with applying few changes, it makes it possible to distribute data between several nodes.</p>
                             <div class="content-button">
                                 <a target="_blank" href="https://github.com/ep2p/kademlia-api" class="btn btn-border-filled"><i class="lni lni-github-original"></i> Open the repository</a>
                             </div>
@@ -200,16 +199,16 @@
                         <div class="contents">
                             <h3 class="head-title">Eleuth Client</h3>
                             <p>Our client applications will support all major platforms: Android, iOS, Linux, Mac, Windows.</p>
-                            <p>We chose some of the best cross-platform solutions so that we can provide the same experience to all of our users.</p>
-                            <p>Our mobile apps are developed with <b>React Native</b> and we also have a CLI client out there to satisfy the nerds!</p>
+                            <p class="small-hidden">We chose some of the best cross-platform solutions so that we can provide the same experience to all of our users.</p>
+                            <p class="small-hidden">Our mobile apps are developed with <b>React Native</b> and we also have a CLI client out there to satisfy the nerds!</p>
                         </div>
                     </div>
                     <div class="cube__face cube__face--bottom">
                         <div class="contents">
                             <h3 class="head-title">Technology Stack</h3>
                             <p>We are using some of the well known technologies to develop our application therefore it will make it easier for other developers to give us a hand.</p>
-                            <p>Most of our backend applications are written in <b>Java</b> and <b>Spring Boot</b>.</p>
-                            <p>The main database choice is <b>MongoDB</b> and we also make use of Google's <b>Guava</b> in various ways.</p>
+                            <p class="small-hidden">Most of our backend applications are written in <b>Java</b> and <b>Spring Boot</b>.</p>
+                            <p class="small-hidden">The main database choice is <b>MongoDB</b> and we also make use of Google's <b>Guava</b> in various ways.</p>
                         </div>
                     </div>
                 </div>
